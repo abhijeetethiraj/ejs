@@ -1,0 +1,96 @@
+    body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #ede5eb 0%, #dbeafe 100%);
+            color: #222;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(50,93,237,0.08);
+            padding: 36px 32px 32px 32px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(50,93,237,0.08);
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #325ded;
+            margin-bottom: 0.2em;
+        }
+        h2 {
+            color: #4b5563;
+            font-weight: 400;
+            margin-top: 0;
+        }
+        h3 {
+            color: #325ded;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+        }
+        ul, ol {
+            margin: 0 0 0.5em 1.5em;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.3em;
+        }
+        .project-img {
+            display: block;
+            margin: 24px auto 16px auto;
+            border-radius: 12px;
+            border: 2px solid #325ded;
+            box-shadow: 0 2px 12px rgba(50,93,237,0.10);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-img:hover {
+            transform: scale(1.04) rotate(-1deg);
+            box-shadow: 0 6px 24px rgba(50,93,237,0.18);
+        }
+        .contact-btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: linear-gradient(90deg, #325ded 60%, #5e72eb 100%);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1em;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 24px;
+            transition: background 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(50,93,237,0.10);
+            text-decoration: none;
+        }
+        .contact-btn:hover {
+            background: linear-gradient(90deg, #e11d48 60%, #be185d 100%);
+            box-shadow: 0 4px 16px rgba(225,29,72,0.12);
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #e5e7eb;
+            margin: 28px 0;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 18px 6vw;
+            }
+            .project-img {
+                width: 100%;
+                height: auto;
+            }
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 16px 10px;
+            }
+        }
