@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= user.name %> | Portfolio</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 style="margin: 0; font-size: 2.5rem;"><%= user.name %></h1>
+      <p style="margin: 5px 0 0 0; color: #666; font-size: 1.1rem;"><%= user.title %></p>
+    </header>
+
+    <h2>About Me</h2>
+    <p><%= user.about %></p>
+
+    <hr>
+    <h3>Skills</h3>
+    <ol>
+      <li>
+        Programming Languages:
+        <ul>
+          <% if (user.skills.programming_languages) { %>
+            <% user.skills.programming_languages.forEach((lang, index) => { %>
+              <li><%= index + 1 %>. <%= lang %></li>
+            <% }) %>
+          <% } %>
+        </ul>
+      </li>
+      <li>
+        Soft Skills:
+        <ul>
+          <% user.skills.soft_skills.forEach((skill, index) => { %>
+            <li><%= index + 1 %>. <%= skill %></li>
+          <% }) %>
+        </ul>
+      </li>
+    </ol>
+
+    <hr>
+    <h3>Projects in Java</h3>
+    <ul>
+      <% user.projects_in_java.forEach((java, index) => { %>
+        <li><%= index + 1 %>. <%= java %></li>
+      <% }) %>
+    </ul>
+
+    <a href="/contact" class="contact-btn">Contact me</a>
+  </div>
+</body>
+</html>

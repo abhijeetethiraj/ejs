@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Contact | Abhijeet Ethiraj</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #ede5eb 0%, #dbeafe 100%);
+            color: #222;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 500px;
+            margin: 60px auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(50,93,237,0.08);
+            padding: 36px 32px 32px 32px;
+        }
+        h1 {
+            color: #325ded;
+            margin-bottom: 0.5em;
+        }
+        label {
+            display: block;
+            margin-top: 18px;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1em;
+            margin-bottom: 16px;
+            background: #f8fafc;
+            transition: border 0.2s;
+        }
+        input:focus, textarea:focus {
+            border: 1.5px solid #325ded;
+            outline: none;
+        }
+        button {
+            padding: 12px 28px;
+            background: linear-gradient(90deg, #325ded 60%, #5e72eb 100%);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(50,93,237,0.10);
+        }
+        button:hover {
+            background: linear-gradient(90deg, #e11d48 60%, #be185d 100%);
+            box-shadow: 0 4px 16px rgba(225,29,72,0.12);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Me</h1>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
