@@ -1,0 +1,23 @@
+{
+  "name": "Abhijeet Ethiraj",
+  "title": "Aspiring Software Developer",
+  "tagline": "Java Enthusiast",
+  "about": "Passionate about building robust software solutions and always eager to learn new technologies. Experienced in Java, C/C++, and Python, with a knack for creative problem-solving and effective management.",
+  "skills": {
+    "programming_languages": [
+      "C/C++",
+      "Java Core",
+      "Python"
+    ],
+    "soft_skills": [
+      "Management",
+      "Creativity"
+    ]
+  },
+  "projects_in_java": [
+    "Bank Management Application",
+    "Number Guessing Game",
+    "Rock Paper Scissor Game"
+  ],
+  "contact_link": "/contact"
+}
